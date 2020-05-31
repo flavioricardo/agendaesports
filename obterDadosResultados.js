@@ -21,4 +21,4 @@ tabelaCopaff
     }
   });
 
-console.log(JSON.stringify(resultados));
+return JSON.stringify(resultados);
