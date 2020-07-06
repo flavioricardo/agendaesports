@@ -1,0 +1,8 @@
+{
+    "workbench.editor.revealIfOpen": true,
+    "gitlens.views.repositories.files.compact": false,
+    "gitlens.views.compare.files.compact": false,
+    "gitlens.views.search.files.compact": false,
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.triggerExpansionOnTab": true
+}
