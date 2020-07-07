@@ -6,13 +6,15 @@ const { Content } = Layout;
 const Campeonatos = () => {
   return (
     <Layout className="site-layout">
-      <Content>
-        <div
-          className="site-layout-background"
-          style={{ padding: 24, minHeight: 360 }}
-        >
-          Campeonatos
-        </div>
+      <Content
+        className="site-layout-background"
+        style={{
+          margin: "24px 16px",
+          padding: 24,
+          minHeight: 280,
+        }}
+      >
+        Campeonatos
       </Content>
     </Layout>
   );

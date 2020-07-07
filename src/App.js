@@ -1,16 +1,29 @@
-import React from "react";
-
-import "antd/dist/antd.css";
+import React, { useState } from "react";
+import { Switch, Route } from "react-router-dom";
 import { Layout } from "antd";
 
+import Cabecalho from "./componentes/cabecalho";
 import Sidebar from "./componentes/sidebar";
 import Campeonatos from "./paginas/campeonatos";
+import Resultados from "./paginas/resultados";
 
 function App() {
+  const [collapsed, setCollapsed] = useState(false);
+
+  const onTriggerCabecalho = (status) => {
+    setCollapsed(status);
+  };
+
   return (
-    <Layout style={{ minHeight: "100vh" }}>
-      <Sidebar />
-      <Campeonatos />
+    <Layout className="ant-layout-has-sider" style={{ minHeight: "100vh" }}>
+      <Sidebar collapsed={collapsed} />
+      <Layout className="layout-background">
+        <Cabecalho onTrigger={onTriggerCabecalho} />
+        <Switch>
+          <Route path="/" component={Campeonatos} exact />
+          <Route path="/resultados" component={Resultados} />
+        </Switch>
+      </Layout>
     </Layout>
   );
 }
