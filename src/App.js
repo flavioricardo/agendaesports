@@ -21,7 +21,7 @@ function App() {
       <Layout className="layout-background">
         <Cabecalho onTrigger={onTriggerCabecalho} />
         <Switch>
-          <Route path="/" component={Campeonatos} />
+          <Route path="/" component={Campeonatos} exact />
           <Route path="/resultados" component={Resultados} />
           <Route path="/calendario" component={Calendario} />
         </Switch>

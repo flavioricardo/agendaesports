@@ -8,7 +8,7 @@ import GlobalStyle from "./global/globalStyle";
 import App from "./App";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/agendaesports">
     <GlobalStyle />
     <App />
   </BrowserRouter>,
