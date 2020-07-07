@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/agendaesports/static/css/main.5f361e03.chunk.css",
-    "main.js": "/agendaesports/static/js/main.26f7f87a.chunk.js",
-    "main.js.map": "/agendaesports/static/js/main.26f7f87a.chunk.js.map",
-    "runtime-main.js": "/agendaesports/static/js/runtime-main.8ea34a22.js",
-    "runtime-main.js.map": "/agendaesports/static/js/runtime-main.8ea34a22.js.map",
-    "static/js/2.02687daf.chunk.js": "/agendaesports/static/js/2.02687daf.chunk.js",
-    "static/js/2.02687daf.chunk.js.map": "/agendaesports/static/js/2.02687daf.chunk.js.map",
+    "main.js": "/agendaesports/static/js/main.73c3353c.chunk.js",
+    "main.js.map": "/agendaesports/static/js/main.73c3353c.chunk.js.map",
+    "runtime-main.js": "/agendaesports/static/js/runtime-main.8c749eb1.js",
+    "runtime-main.js.map": "/agendaesports/static/js/runtime-main.8c749eb1.js.map",
+    "static/css/2.9edc93b8.chunk.css": "/agendaesports/static/css/2.9edc93b8.chunk.css",
+    "static/js/2.62e0cfbc.chunk.js": "/agendaesports/static/js/2.62e0cfbc.chunk.js",
+    "static/js/2.62e0cfbc.chunk.js.map": "/agendaesports/static/js/2.62e0cfbc.chunk.js.map",
     "index.html": "/agendaesports/index.html",
-    "precache-manifest.c077e5930f3500e4a47cdb0e86e26576.js": "/agendaesports/precache-manifest.c077e5930f3500e4a47cdb0e86e26576.js",
+    "precache-manifest.a0bc1def1b83ec27f5578dbf34e35e4a.js": "/agendaesports/precache-manifest.a0bc1def1b83ec27f5578dbf34e35e4a.js",
     "service-worker.js": "/agendaesports/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/agendaesports/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.02687daf.chunk.js.LICENSE.txt": "/agendaesports/static/js/2.02687daf.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/agendaesports/static/media/logo.5d5d9eef.svg"
+    "static/css/2.9edc93b8.chunk.css.map": "/agendaesports/static/css/2.9edc93b8.chunk.css.map",
+    "static/js/2.62e0cfbc.chunk.js.LICENSE.txt": "/agendaesports/static/js/2.62e0cfbc.chunk.js.LICENSE.txt",
+    "static/media/FreeFire.png": "/agendaesports/static/media/FreeFire.c84e2018.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.8ea34a22.js",
-    "static/js/2.02687daf.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.26f7f87a.chunk.js"
+    "static/js/runtime-main.8c749eb1.js",
+    "static/css/2.9edc93b8.chunk.css",
+    "static/js/2.62e0cfbc.chunk.js",
+    "static/js/main.73c3353c.chunk.js"
   ]
 }
