@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e9242cada9015097d3c7027ae631c5f4",
+    "revision": "dd4c533d617dfdf15bb3f09fea2a0106",
     "url": "/agendaesports/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agendaesports/static/js/2.62e0cfbc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "74f2baf7611405347baf",
-    "url": "/agendaesports/static/js/main.73c3353c.chunk.js"
+    "revision": "55354da60b99190082d1",
+    "url": "/agendaesports/static/js/main.03525250.chunk.js"
   },
   {
     "revision": "c4b70922cc4f3f223ae9",
