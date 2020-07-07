@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export default createGlobalStyle`
     body {
         background: #000;
+        color: #F2F2F2;
         font-family: 'Chakra Petch', sans-serif;
     }
 
@@ -49,5 +50,8 @@ export default createGlobalStyle`
 
     .layout-background .site-layout {
         background: #000;
+    }
+    .site-layout-background {
+        background: #272727;
     }
 `;

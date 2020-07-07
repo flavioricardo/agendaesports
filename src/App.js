@@ -6,6 +6,7 @@ import Cabecalho from "./componentes/cabecalho";
 import Sidebar from "./componentes/sidebar";
 import Campeonatos from "./paginas/campeonatos";
 import Resultados from "./paginas/resultados";
+import Calendario from "./paginas/calendario";
 
 function App() {
   const [collapsed, setCollapsed] = useState(false);
@@ -22,6 +23,7 @@ function App() {
         <Switch>
           <Route path="/" component={Campeonatos} exact />
           <Route path="/resultados" component={Resultados} />
+          <Route path="/calendario" component={Calendario} />
         </Switch>
       </Layout>
     </Layout>

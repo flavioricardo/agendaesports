@@ -18,6 +18,10 @@ const Container = styled.div`
     text-transform: uppercase;
   }
 
+  .ant-table-tbody > tr:last-child > td {
+    border-bottom: 0;
+  }
+
   .ant-table-tbody > tr.ant-table-row:hover > td {
     background: #000;
     color: #f2f2f2;
