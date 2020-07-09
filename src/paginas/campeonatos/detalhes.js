@@ -22,8 +22,8 @@ const Detalhes = ({ campeonato }) => {
                     <Badge
                       count={t + 1}
                       style={{
-                        backgroundColor: "#7A6F6F",
-                        borderColor: "#7A6F6F",
+                        backgroundColor: "#F79E19",
+                        borderColor: "#F79E19",
                       }}
                     />
                     <Tag>{time}</Tag>

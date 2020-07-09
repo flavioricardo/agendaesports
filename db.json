@@ -5,6 +5,7 @@
       "data": "2020-05-29 14:00:00",
       "tipo": "Free Fire",
       "titulo": "C.O.P.A. FREE FIRE",
+      "imagem": "https://www.ffesports.com.br/wp-content/uploads/2020/06/copa-logo.png",
       "rodada": "Grupos A e B",
       "detalhes": [
         {
@@ -36,6 +37,7 @@
       "data": "2020-05-30 14:00:00",
       "tipo": "Free Fire",
       "titulo": "C.O.P.A. FREE FIRE",
+      "imagem": "https://www.ffesports.com.br/wp-content/uploads/2020/06/copa-logo.png",
       "rodada": "Grupos B e C"
     },
     {
@@ -43,6 +45,7 @@
       "data": "2020-05-31 14:00:00",
       "tipo": "Free Fire",
       "titulo": "C.O.P.A. FREE FIRE",
+      "imagem": "https://www.ffesports.com.br/wp-content/uploads/2020/06/copa-logo.png",
       "rodada": "Grupos A e C"
     }
   ],
@@ -50,93 +53,126 @@
     {
       "posicao": "1",
       "time": "Vivo Keyd",
+      "imagem": "https://www.ffesports.com.br/wp-content/uploads/2020/02/brasao-vivokeyd-48x48.png",
       "pontuacao": "543 pts",
       "variacao": 1
     },
-    { "posicao": "2", "time": "INTZ", "pontuacao": "533 pts", "variacao": 1 },
+    {
+      "posicao": "2",
+      "time": "INTZ",
+      "imagem": "https://www.ffesports.com.br/wp-content/uploads/2020/02/brasao-intz-48x48.png",
+      "pontuacao": "533 pts",
+      "variacao": 1
+    },
     {
       "posicao": "3",
       "time": "Corinthians Free Fire",
+      "imagem": "https://www.ffesports.com.br/wp-content/uploads/2020/02/brasao-corinthians-48x48.png",
       "pontuacao": "408 pts",
       "variacao": 0
     },
-    { "posicao": "4", "time": "B4", "pontuacao": "404 pts", "variacao": null },
+    {
+      "posicao": "4",
+      "time": "B4",
+      "imagem": "https://www.ffesports.com.br/wp-content/uploads/2020/02/LOGO-B4-48x48.png",
+      "pontuacao": "404 pts",
+      "variacao": null
+    },
     {
       "posicao": "5",
       "time": "RED Canids Kalunga",
+      "imagem": "https://www.ffesports.com.br/wp-content/uploads/2020/02/brasao-redcanids-48x48.png",
       "pontuacao": "386 pts",
       "variacao": null
     },
-    { "posicao": "6", "time": "LOUD", "pontuacao": "342 pts", "variacao": 1 },
+    {
+      "posicao": "6",
+      "time": "LOUD",
+      "imagem": "https://www.ffesports.com.br/wp-content/uploads/2020/02/brasao-loud-48x48.png",
+      "pontuacao": "342 pts",
+      "variacao": 1
+    },
     {
       "posicao": "7",
       "time": "Santos HotForex e-Sports",
+      "imagem": "https://www.ffesports.com.br/wp-content/uploads/2020/05/brasao-santoshotforex-48x48.png",
       "pontuacao": "341 pts",
       "variacao": 0
     },
     {
       "posicao": "8",
       "time": "Fear",
+      "imagem": "https://www.ffesports.com.br/wp-content/uploads/2020/05/brasao-fear-48x48.png",
       "pontuacao": "331 pts",
       "variacao": null
     },
     {
       "posicao": "9",
       "time": "Los Grandes",
+      "imagem": "https://www.ffesports.com.br/wp-content/uploads/2020/05/brasao-losgrandes-48x48.png",
       "pontuacao": "321 pts",
       "variacao": null
     },
     {
       "posicao": "10",
       "time": "FURIA",
+      "imagem": "https://www.ffesports.com.br/wp-content/uploads/2020/02/brasao-furia-48x48.png",
       "pontuacao": "290 pts",
       "variacao": null
     },
     {
       "posicao": "11",
       "time": "Black Dragons",
+      "imagem": "https://www.ffesports.com.br/wp-content/uploads/2020/05/brasao-blackdragons-1-48x48.png",
       "pontuacao": "272 pts",
       "variacao": 1
     },
     {
       "posicao": "12",
       "time": "God E-Sports",
+      "imagem": "https://www.ffesports.com.br/wp-content/uploads/2020/05/brasao-godesports-48x48.png",
       "pontuacao": "272 pts",
       "variacao": 0
     },
     {
       "posicao": "13",
       "time": "Team Liquid",
+      "imagem": "https://www.ffesports.com.br/wp-content/uploads/2020/02/brasao-teamliquid-48x48.png",
       "pontuacao": "253 pts",
       "variacao": null
     },
     {
       "posicao": "14",
       "time": "Cruzeiro eSports",
+      "imagem": "https://www.ffesports.com.br/wp-content/uploads/2020/05/brasao-cruzeiro-48x48.png",
       "pontuacao": "247 pts",
       "variacao": null
     },
     {
       "posicao": "15",
       "time": "paiN Gaming",
+      "imagem": "https://www.ffesports.com.br/wp-content/uploads/2020/02/brasao-paingaming-48x48.png",
       "pontuacao": "226 pts",
       "variacao": null
     },
     {
       "posicao": "16",
       "time": "KaBuM! e-Sports",
+      "imagem": "https://www.ffesports.com.br/wp-content/uploads/2020/05/brasao-kabum-48x48.png",
       "pontuacao": "222 pts",
       "variacao": null
     },
     {
       "posicao": "17",
       "time": "Team Rush",
+      "imagem": "https://www.ffesports.com.br/wp-content/uploads/2020/05/brasao-teamrush-48x48.png",
       "pontuacao": "213 pts",
       "variacao": 1
     },
     {
       "posicao": "18",
       "time": "SS E-Sports",
+      "imagem": "https://www.ffesports.com.br/wp-content/uploads/2020/05/brasao-ss-48x48.png",
       "pontuacao": "202 pts",
       "variacao": 0
     }

@@ -10,12 +10,14 @@ tabelaCopaff
   .forEach((resultado, indice) => {
     const posicao = resultado.querySelector("td:nth-child(1)");
     const time = resultado.querySelector("td:nth-child(3)");
+    const imagem = resultado.querySelector("td:nth-child(2) img");
     const pontuacao = resultado.querySelector("td:nth-child(4)");
 
-    if (posicao && time && pontuacao) {
+    if (posicao && time && imagem && pontuacao) {
       resultados[indice] = {
         posicao: posicao.innerHTML.trim().replace("º", ""),
         time: time.innerHTML.trim(),
+        imagem: imagem.src.trim(),
         pontuacao: pontuacao.innerHTML.trim(),
       };
     }

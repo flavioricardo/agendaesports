@@ -18,9 +18,9 @@ const Campeonatos = () => {
       title: "Data/Hora",
       dataIndex: "data",
       key: "data",
-      sorter: (a, b) => {
-        console.log(moment(a.data));
-        return new Date(a.data) - new Date(b.data);
+      render: (text) => moment(text).format("DD/MM/YYYY HH:mm"),
+      sorter: (inicio, fim) => {
+        return moment(inicio.data) > moment(fim.data);
       },
       sortDirections: ["descend"],
     },
@@ -28,7 +28,14 @@ const Campeonatos = () => {
       title: "Tipo",
       dataIndex: "tipo",
       key: "tipo",
-      render: (text) => <Tag color="orange">{text}</Tag>,
+      render: (text) => (
+        <Tag
+          color="orange"
+          style={{ borderColor: "#F79E19", color: "#F79E19" }}
+        >
+          {text}
+        </Tag>
+      ),
     },
     { title: "Nome", dataIndex: "titulo", key: "titulo" },
     { title: "Rodada", dataIndex: "rodada", key: "rodada" },
