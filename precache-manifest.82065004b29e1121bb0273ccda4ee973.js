@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "41b86fbc37cf207a65f1a7c8e53a203d",
+    "revision": "cae827321c14ce8702003be8654bbf2b",
     "url": "/agendaesports/index.html"
   },
   {
-    "revision": "fc400e8a155ab67f4ef1",
+    "revision": "f122ea158f3ccf38ad93",
     "url": "/agendaesports/static/css/2.df3db916.chunk.css"
   },
   {
-    "revision": "fc400e8a155ab67f4ef1",
-    "url": "/agendaesports/static/js/2.cc945be4.chunk.js"
+    "revision": "f122ea158f3ccf38ad93",
+    "url": "/agendaesports/static/js/2.f0c57672.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/agendaesports/static/js/2.cc945be4.chunk.js.LICENSE.txt"
+    "url": "/agendaesports/static/js/2.f0c57672.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cf1165fa81c5f283c0fa",
-    "url": "/agendaesports/static/js/main.4a39b5b9.chunk.js"
+    "revision": "8145425b6684a7dc4202",
+    "url": "/agendaesports/static/js/main.b2a20acc.chunk.js"
   },
   {
     "revision": "c4b70922cc4f3f223ae9",

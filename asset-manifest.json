@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.js": "/agendaesports/static/js/main.4a39b5b9.chunk.js",
-    "main.js.map": "/agendaesports/static/js/main.4a39b5b9.chunk.js.map",
+    "main.js": "/agendaesports/static/js/main.b2a20acc.chunk.js",
+    "main.js.map": "/agendaesports/static/js/main.b2a20acc.chunk.js.map",
     "runtime-main.js": "/agendaesports/static/js/runtime-main.8c749eb1.js",
     "runtime-main.js.map": "/agendaesports/static/js/runtime-main.8c749eb1.js.map",
     "static/css/2.df3db916.chunk.css": "/agendaesports/static/css/2.df3db916.chunk.css",
-    "static/js/2.cc945be4.chunk.js": "/agendaesports/static/js/2.cc945be4.chunk.js",
-    "static/js/2.cc945be4.chunk.js.map": "/agendaesports/static/js/2.cc945be4.chunk.js.map",
+    "static/js/2.f0c57672.chunk.js": "/agendaesports/static/js/2.f0c57672.chunk.js",
+    "static/js/2.f0c57672.chunk.js.map": "/agendaesports/static/js/2.f0c57672.chunk.js.map",
     "index.html": "/agendaesports/index.html",
-    "precache-manifest.1bdfd757a64d1a632063f66c2f419504.js": "/agendaesports/precache-manifest.1bdfd757a64d1a632063f66c2f419504.js",
+    "precache-manifest.82065004b29e1121bb0273ccda4ee973.js": "/agendaesports/precache-manifest.82065004b29e1121bb0273ccda4ee973.js",
     "service-worker.js": "/agendaesports/service-worker.js",
     "static/css/2.df3db916.chunk.css.map": "/agendaesports/static/css/2.df3db916.chunk.css.map",
-    "static/js/2.cc945be4.chunk.js.LICENSE.txt": "/agendaesports/static/js/2.cc945be4.chunk.js.LICENSE.txt",
+    "static/js/2.f0c57672.chunk.js.LICENSE.txt": "/agendaesports/static/js/2.f0c57672.chunk.js.LICENSE.txt",
     "static/media/FreeFire.png": "/agendaesports/static/media/FreeFire.c84e2018.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8c749eb1.js",
     "static/css/2.df3db916.chunk.css",
-    "static/js/2.cc945be4.chunk.js",
-    "static/js/main.4a39b5b9.chunk.js"
+    "static/js/2.f0c57672.chunk.js",
+    "static/js/main.b2a20acc.chunk.js"
   ]
 }
