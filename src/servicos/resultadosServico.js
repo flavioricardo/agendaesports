@@ -3,7 +3,7 @@ import axios from "axios";
 class ResultadosServico {
   obterResultados = () => {
     return axios.get(
-      "http://my-json-server.typicode.com/flavioricardo/agendaesports/resultados"
+      "https://my-json-server.typicode.com/flavioricardo/agendaesports/resultados"
     );
   };
 }
