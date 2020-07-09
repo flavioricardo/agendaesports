@@ -2,7 +2,7 @@
   "campeonatos": [
     {
       "codigo": 1,
-      "data": "29/05/2020 14:00",
+      "data": "2020-05-29 14:00:00",
       "tipo": "Free Fire",
       "titulo": "C.O.P.A. FREE FIRE",
       "rodada": "Grupos A e B",
@@ -33,14 +33,14 @@
     },
     {
       "codigo": 2,
-      "data": "30/05/2020 14:00",
+      "data": "2020-05-30 14:00:00",
       "tipo": "Free Fire",
       "titulo": "C.O.P.A. FREE FIRE",
       "rodada": "Grupos B e C"
     },
     {
       "codigo": 3,
-      "data": "31/05/2020 14:00",
+      "data": "2020-05-31 14:00:00",
       "tipo": "Free Fire",
       "titulo": "C.O.P.A. FREE FIRE",
       "rodada": "Grupos A e C"

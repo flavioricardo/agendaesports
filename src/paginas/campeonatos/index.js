@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import moment from "moment";
 import campeonatosServico from "../../servicos/campeonatosServico";
 
 import { Container } from "./style";
@@ -9,13 +10,18 @@ import { UpCircleFilled, DownCircleFilled } from "@ant-design/icons";
 import { Layout, Table, Tag, Space } from "antd";
 const { Content } = Layout;
 
+moment.locale("pt-br");
+
 const Campeonatos = () => {
   const colunas = [
     {
       title: "Data/Hora",
       dataIndex: "data",
       key: "data",
-      sorter: (a, b) => {console.log(new Date(a.data)); return new Date(a.data) - new Date(b.data)},
+      sorter: (a, b) => {
+        console.log(moment(a.data));
+        return new Date(a.data) - new Date(b.data);
+      },
       sortDirections: ["descend"],
     },
     {
@@ -58,6 +64,7 @@ const Campeonatos = () => {
             dataSource={dados}
             pagination={false}
             bordered
+            size="large"
             loading={carregandoDados}
             locale={{ emptyText: "Sem dados dos campeonatos vigentes" }}
             expandable={{
@@ -71,7 +78,7 @@ const Campeonatos = () => {
                 expanded ? (
                   <Space>
                     <UpCircleFilled
-                      style={{ color: "#F79E19" }}
+                      style={{ color: "#FFF" }}
                       onClick={(e) => onExpand(record, e)}
                     />
                   </Space>
