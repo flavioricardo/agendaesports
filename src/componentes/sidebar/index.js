@@ -27,20 +27,18 @@ const Sidebar = (props) => {
 
   return (
     <Sider trigger={null} collapsible collapsed={collapsed}>
-      <NavLink to="/">
-        <Logo>
-          {!collapsed ? (
-            <img src={agendaeSports} alt="Agenda eSports" />
-          ) : (
-            <HomeOutlined />
-          )}
-        </Logo>
+      <Logo>
         {!collapsed ? (
-          <Modalidade>
-            <img src={FreeFire} alt="Free Fire" />
-          </Modalidade>
-        ) : null}
-      </NavLink>
+          <img src={agendaeSports} alt="Agenda eSports" />
+        ) : (
+          <HomeOutlined />
+        )}
+      </Logo>
+      {!collapsed ? (
+        <Modalidade>
+          <img src={FreeFire} alt="Free Fire" />
+        </Modalidade>
+      ) : null}
       <Menu theme="dark" mode="inline">
         <Menu.Item
           key="1"

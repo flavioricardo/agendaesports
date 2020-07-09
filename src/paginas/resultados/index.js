@@ -3,9 +3,10 @@ import resultadosServico from "../../servicos/resultadosServico";
 
 import { Container, Cell, Vazio, Logo } from "./style";
 
-import { Layout, Table } from "antd";
+import { Layout, Table, Select } from "antd";
 
 import { ArrowUpOutlined, ArrowDownOutlined } from "@ant-design/icons";
+import { Option } from "antd/lib/mentions";
 
 const { Content } = Layout;
 
@@ -79,6 +80,8 @@ const Resultados = () => {
     obterResultados();
   }, []);
 
+  const campeonatos = [{ codigo: 1, titulo: "C.O.P.A. FREE FIRE" }];
+
   return (
     <Layout className="site-layout">
       <Content
@@ -89,6 +92,14 @@ const Resultados = () => {
         }}
       >
         <Container>
+          <Select
+            placeholder="Selecione um campeonato"
+            style={{ marginBottom: 15 }}
+          >
+            {campeonatos.map((campeonato) => (
+              <Option key={campeonato.codigo}>{campeonato.titulo}</Option>
+            ))}
+          </Select>
           <Table
             rowKey="posicao"
             columns={colunas}

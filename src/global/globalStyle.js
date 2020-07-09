@@ -81,4 +81,20 @@ export default createGlobalStyle`
     .ant-picker-calendar-full .ant-picker-panel .ant-picker-calendar-date-today {
         border-color: #F79E19;
     }
+    .ant-picker-cell.ant-picker-cell-in-view.ant-picker-cell-selected::selection {
+        background-color: #F79E19;
+    }
+
+    .ant-picker-calendar-full .ant-picker-panel .ant-picker-cell-selected .ant-picker-calendar-date, .ant-picker-calendar-full .ant-picker-panel .ant-picker-cell-selected:hover .ant-picker-calendar-date, .ant-picker-calendar-full .ant-picker-panel .ant-picker-cell-selected .ant-picker-calendar-date-today, .ant-picker-calendar-full .ant-picker-panel .ant-picker-cell-selected:hover .ant-picker-calendar-date-today {
+        background-color: rgb(247, 158, 25, 0.1);
+    }
+    .ant-picker-calendar-full .ant-picker-panel .ant-picker-cell-selected .ant-picker-calendar-date .ant-picker-calendar-date-value,
+    .ant-picker-calendar-full .ant-picker-panel .ant-picker-cell-selected .ant-picker-calendar-date .ant-picker-calendar-date-value:hover,
+    .ant-picker-calendar-full .ant-picker-panel .ant-picker-cell-selected .ant-picker-calendar-date .ant-picker-calendar-date-value, .ant-picker-calendar-full .ant-picker-panel .ant-picker-cell-selected:hover .ant-picker-calendar-date .ant-picker-calendar-date-value, .ant-picker-calendar-full .ant-picker-panel .ant-picker-cell-selected .ant-picker-calendar-date-today .ant-picker-calendar-date-value, .ant-picker-calendar-full .ant-picker-panel .ant-picker-cell-selected:hover .ant-picker-calendar-date-today .ant-picker-calendar-date-value {
+        color: #F79E19;
+    }
+
+    .ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+        border-color: #F79E19;
+    }
 `;
