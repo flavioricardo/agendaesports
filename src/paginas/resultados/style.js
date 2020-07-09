@@ -1,25 +1,24 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  border: 1px solid #272727;
-
   .ant-table-thead > tr > th {
     background: #000;
-    border-color: #272727;
-    border-radius: 0 !important;
+    border-radius: 0;
     color: #f2f2f2;
     text-align: center;
   }
 
-  .ant-table-tbody > tr > td {
-    background: #272727;
-    border-color: #000;
-    color: #f2f2f2;
-    text-transform: uppercase;
+  .ant-table-container table > thead > tr:first-child th:first-child,
+  .ant-table-container table > thead > tr:first-child th:last-child {
+    border-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
-  .ant-table-tbody > tr:last-child > td {
-    border-bottom: 0;
+  .ant-table-tbody > tr > td {
+    background: #272727;
+    color: #f2f2f2;
+    text-transform: uppercase;
   }
 
   .ant-table-tbody > tr.ant-table-row:hover > td {
@@ -35,4 +34,6 @@ const Cell = styled.span`
   text-align: center;
 `;
 
-export { Container, Cell };
+const Vazio = styled.span``;
+
+export { Container, Cell, Vazio };

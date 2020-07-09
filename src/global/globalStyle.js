@@ -33,8 +33,15 @@ export default createGlobalStyle`
     .ant-menu.ant-menu-dark {
         background: #272727;
     }
+    .ant-menu-item {
+        border-bottom: 1px solid #000;
+        margin: 0 !important;
+    }
     .ant-menu-item a, .ant-menu-item a:hover {
         color: #FFFFFFA6;
+    }
+    .ant-menu-item-selected {
+        border-bottom: 1px solid #272727;
     }
     .ant-menu-dark .ant-menu-item-selected, .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
         background: #000;

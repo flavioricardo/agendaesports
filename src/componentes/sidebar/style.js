@@ -14,6 +14,7 @@ const Modalidade = styled.div`
   background: #272727;
   display: flex;
   justify-content: center;
+  padding: 10px 0;
 `;
 
 export { Logo, Modalidade };

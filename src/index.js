@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 
-import "antd/dist/antd.css";
+import "antd/dist/antd.dark.css";
 import GlobalStyle from "./global/globalStyle";
 
 import App from "./App";

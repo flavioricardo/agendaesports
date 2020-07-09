@@ -5,7 +5,18 @@
       "data": "29/05/2020 14:00",
       "tipo": "Free Fire",
       "titulo": "C.O.P.A. FREE FIRE",
-      "rodada": "Grupos A e B"
+      "rodada": "Grupos A e B",
+      "detalhes": [
+        {
+          "round": "Queda 1",
+          "times": [
+            "Vivo Keyd",
+            "Corinthians Free Fire",
+            "RED Canids Kalunga",
+            "Cruzeiro eSports"
+          ]
+        }
+      ]
     },
     {
       "codigo": 2,
@@ -72,13 +83,13 @@
       "posicao": "11",
       "time": "Black Dragons",
       "pontuacao": "272 pts",
-      "variacao": null
+      "variacao": 1
     },
     {
       "posicao": "12",
       "time": "God E-Sports",
       "pontuacao": "272 pts",
-      "variacao": null
+      "variacao": 0
     },
     {
       "posicao": "13",

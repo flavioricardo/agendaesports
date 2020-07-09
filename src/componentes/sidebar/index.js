@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import Sider from "antd/lib/layout/Sider";
 import { Menu, Space } from "antd";
@@ -13,10 +13,17 @@ import agendaeSports from "../../assets/agendaeSports.png";
 import FreeFire from "../../assets/FreeFire.png";
 
 import { Logo, Modalidade } from "./style";
-import { NavLink } from "react-router-dom";
+import { useLocation, NavLink } from "react-router-dom";
 
 const Sidebar = (props) => {
   const { collapsed } = props;
+  const location = useLocation();
+
+  const [rotaAtual, setRotaAtual] = useState();
+
+  useEffect(() => {
+    if (location && location.pathname) setRotaAtual(location.pathname);
+  }, [location]);
 
   return (
     <Sider trigger={null} collapsible collapsed={collapsed}>
@@ -38,7 +45,8 @@ const Sidebar = (props) => {
         <Menu.Item
           key="1"
           icon={<ApartmentOutlined />}
-          style={{ height: "auto", paddingTop: 10, paddingBottom: 10 }}
+          style={{ height: "auto", paddingTop: 15, paddingBottom: 15 }}
+          className={rotaAtual === "/" && "ant-menu-item-selected"}
         >
           <Space direction="vertical" size="large" align="center">
             <NavLink to="/">Campeonatos</NavLink>
@@ -47,7 +55,8 @@ const Sidebar = (props) => {
         <Menu.Item
           key="2"
           icon={<CalendarOutlined />}
-          style={{ height: "auto", paddingTop: 10, paddingBottom: 10 }}
+          style={{ height: "auto", paddingTop: 15, paddingBottom: 15 }}
+          className={rotaAtual === "/calendario" && "ant-menu-item-selected"}
         >
           <Space direction="vertical" size="large" align="center">
             <NavLink to="/calendario">Calendário</NavLink>
@@ -56,7 +65,8 @@ const Sidebar = (props) => {
         <Menu.Item
           key="3"
           icon={<TableOutlined />}
-          style={{ height: "auto", paddingTop: 10, paddingBottom: 10 }}
+          style={{ height: "auto", paddingTop: 15, paddingBottom: 15 }}
+          className={rotaAtual === "/resultados" && "ant-menu-item-selected"}
         >
           <Space direction="vertical" size="large" align="center">
             <NavLink to="/resultados">Resultados</NavLink>
