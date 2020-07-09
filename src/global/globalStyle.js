@@ -57,4 +57,28 @@ export default createGlobalStyle`
     .site-layout-background {
         background: #272727;
     }
+
+    .ant-radio-button-wrapper-checked:not([class*=' ant-radio-button-wrapper-disabled']).ant-radio-button-wrapper:first-child {
+        border-color: #F79E19;
+        border-right-color: #F79E19;
+        color: #F79E19;
+    }
+    .ant-radio-button-wrapper:hover {
+        color: #F79E19;
+    }
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled), .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before {
+        border-color: #F79E19;
+        border-left-color: #F79E19;
+        color: #F79E19;
+    }
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+        border-color: #F79E19;
+        color: #F79E19;
+    }
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before {
+        background-color: #F79E19;
+    }
+    .ant-picker-calendar-full .ant-picker-panel .ant-picker-calendar-date-today {
+        border-color: #F79E19;
+    }
 `;

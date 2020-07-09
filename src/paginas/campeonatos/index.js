@@ -3,6 +3,8 @@ import campeonatosServico from "../../servicos/campeonatosServico";
 
 import { Container } from "./style";
 
+import { UpCircleFilled, DownCircleFilled } from "@ant-design/icons";
+
 import { Layout, Table, Tag, Space } from "antd";
 const { Content } = Layout;
 
@@ -17,11 +19,6 @@ const Campeonatos = () => {
     },
     { title: "Nome", dataIndex: "titulo", key: "titulo" },
     { title: "Rodada", dataIndex: "rodada", key: "rodada" },
-    {
-      title: "Detalhes",
-      key: "detalhes",
-      render: (text, record) => <Space size="middle">Invite</Space>,
-    },
   ];
 
   const [carregandoDados, setCarregandoDados] = useState(false);
@@ -39,9 +36,8 @@ const Campeonatos = () => {
   }, []);
 
   return (
-    <Layout className="site-layout" style={{ height: "auto" }}>
+    <Layout className="site-layout">
       <Content
-        className="site-layout-background"
         style={{
           height: "auto",
           margin: "24px 16px",
@@ -58,11 +54,29 @@ const Campeonatos = () => {
             loading={carregandoDados}
             locale={{ emptyText: "Sem dados dos campeonatos vigentes" }}
             expandable={{
-              childrenColumnName: "detalhes",
+              expandIconColumnIndex: 4,
               expandedRowRender: (campeonato) =>
                 `${campeonato.titulo} ${campeonato.rodada}`,
               rowExpandable: (campeonato) =>
-                campeonato.detalhes && campeonato.detalhes.length,
+                (campeonato &&
+                  campeonato.detalhes &&
+                  campeonato.detalhes.length) === true,
+              expandIcon: ({ aberto, onExpand, record }) =>
+                aberto ? (
+                  <Space>
+                    <UpCircleFilled
+                      style={{ color: "#F79E19" }}
+                      onClick={(e) => onExpand(record, e)}
+                    />
+                  </Space>
+                ) : (
+                  <Space>
+                    <DownCircleFilled
+                      style={{ color: "#F79E19" }}
+                      onClick={(e) => onExpand(record, e)}
+                    />
+                  </Space>
+                ),
             }}
           />
         </Container>
