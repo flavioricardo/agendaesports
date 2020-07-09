@@ -1,7 +1,7 @@
 import React from "react";
 
 import Sider from "antd/lib/layout/Sider";
-import { Menu } from "antd";
+import { Menu, Space } from "antd";
 import {
   HomeOutlined,
   ApartmentOutlined,
@@ -20,27 +20,47 @@ const Sidebar = (props) => {
 
   return (
     <Sider trigger={null} collapsible collapsed={collapsed}>
-      <Logo>
+      <NavLink to="/">
+        <Logo>
+          {!collapsed ? (
+            <img src={agendaeSports} alt="Agenda eSports" />
+          ) : (
+            <HomeOutlined />
+          )}
+        </Logo>
         {!collapsed ? (
-          <img src={agendaeSports} alt="Agenda eSports" />
-        ) : (
-          <HomeOutlined />
-        )}
-      </Logo>
-      {!collapsed ? (
-        <Modalidade>
-          <img src={FreeFire} alt="Free Fire" />
-        </Modalidade>
-      ) : null}
+          <Modalidade>
+            <img src={FreeFire} alt="Free Fire" />
+          </Modalidade>
+        ) : null}
+      </NavLink>
       <Menu theme="dark" mode="inline">
-        <Menu.Item key="1" icon={<ApartmentOutlined />}>
-          <NavLink to="/">Campeonatos</NavLink>
+        <Menu.Item
+          key="1"
+          icon={<ApartmentOutlined />}
+          style={{ height: "auto", paddingTop: 10, paddingBottom: 10 }}
+        >
+          <Space direction="vertical" size="large" align="center">
+            <NavLink to="/">Campeonatos</NavLink>
+          </Space>
         </Menu.Item>
-        <Menu.Item key="2" icon={<CalendarOutlined />}>
-          <NavLink to="/calendario">Calendário</NavLink>
+        <Menu.Item
+          key="2"
+          icon={<CalendarOutlined />}
+          style={{ height: "auto", paddingTop: 10, paddingBottom: 10 }}
+        >
+          <Space direction="vertical" size="large" align="center">
+            <NavLink to="/calendario">Calendário</NavLink>
+          </Space>
         </Menu.Item>
-        <Menu.Item key="3" icon={<TableOutlined />}>
-          <NavLink to="/resultados">Resultados</NavLink>
+        <Menu.Item
+          key="3"
+          icon={<TableOutlined />}
+          style={{ height: "auto", paddingTop: 10, paddingBottom: 10 }}
+        >
+          <Space direction="vertical" size="large" align="center">
+            <NavLink to="/resultados">Resultados</NavLink>
+          </Space>
         </Menu.Item>
       </Menu>
     </Sider>

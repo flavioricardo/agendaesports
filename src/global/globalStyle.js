@@ -33,18 +33,14 @@ export default createGlobalStyle`
     .ant-menu.ant-menu-dark {
         background: #272727;
     }
-    .ant-menu-dark .ant-menu-item {
-        height: 60px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .ant-menu-dark .ant-menu-item:first-child {
-        margin-top: 0;
+    .ant-menu-item a, .ant-menu-item a:hover {
+        color: #FFFFFFA6;
     }
     .ant-menu-dark .ant-menu-item-selected, .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
         background: #000;
+        color: #F79E19;
     }
-    .ant-menu-dark .ant-menu-item-selected .anticon, .ant-menu-dark .ant-menu-item-selected .anticon + span {
+    .ant-menu-item-selected a, .ant-menu-item-selected a:hover, .ant-menu-dark .ant-menu-item-selected .anticon {
         color: #F79E19;
     }
 
