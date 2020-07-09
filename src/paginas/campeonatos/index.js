@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import campeonatosServico from "../../servicos/campeonatosServico";
 
 import { Container } from "./style";
+import Detalhes from "./detalhes";
 
 import { UpCircleFilled, DownCircleFilled } from "@ant-design/icons";
 
@@ -55,12 +56,11 @@ const Campeonatos = () => {
             locale={{ emptyText: "Sem dados dos campeonatos vigentes" }}
             expandable={{
               expandIconColumnIndex: 4,
-              expandedRowRender: (campeonato) =>
-                `${campeonato.titulo} ${campeonato.rodada}`,
+              expandedRowRender: (campeonato) => (
+                <Detalhes campeonato={campeonato} />
+              ),
               rowExpandable: (campeonato) =>
-                (campeonato &&
-                  campeonato.detalhes &&
-                  campeonato.detalhes.length) === true,
+                campeonato?.detalhes?.length > 0 ?? false,
               expandIcon: ({ aberto, onExpand, record }) =>
                 aberto ? (
                   <Space>

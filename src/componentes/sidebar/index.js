@@ -22,7 +22,7 @@ const Sidebar = (props) => {
   const [rotaAtual, setRotaAtual] = useState();
 
   useEffect(() => {
-    if (location && location.pathname) setRotaAtual(location.pathname);
+    setRotaAtual(location.pathname);
   }, [location]);
 
   return (
