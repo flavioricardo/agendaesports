@@ -11,7 +11,13 @@ const { Content } = Layout;
 
 const Campeonatos = () => {
   const colunas = [
-    { title: "Data/Hora", dataIndex: "data", key: "data" },
+    {
+      title: "Data/Hora",
+      dataIndex: "data",
+      key: "data",
+      sorter: (a, b) => {console.log(new Date(a.data)); return new Date(a.data) - new Date(b.data)},
+      sortDirections: ["descend"],
+    },
     {
       title: "Tipo",
       dataIndex: "tipo",
@@ -61,8 +67,8 @@ const Campeonatos = () => {
               ),
               rowExpandable: (campeonato) =>
                 campeonato?.detalhes?.length > 0 ?? false,
-              expandIcon: ({ aberto, onExpand, record }) =>
-                aberto ? (
+              expandIcon: ({ expanded, onExpand, record }) =>
+                expanded ? (
                   <Space>
                     <UpCircleFilled
                       style={{ color: "#F79E19" }}
