@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import moment from "moment";
 import campeonatosServico from "../../servicos/campeonatosServico";
 
-import { Container } from "./style";
+import { Container, Logo } from "./style";
 import Detalhes from "./detalhes";
 
 import { UpCircleFilled, DownCircleFilled } from "@ant-design/icons";
@@ -11,6 +11,14 @@ import { Layout, Table, Tag, Space } from "antd";
 const { Content } = Layout;
 
 moment.locale("pt-br");
+
+const renderCampeonato = (text, item) => {
+  return (
+    <>
+      <Logo src={item.imagem} /> {text}
+    </>
+  );
+};
 
 const Campeonatos = () => {
   const colunas = [
@@ -37,7 +45,12 @@ const Campeonatos = () => {
         </Tag>
       ),
     },
-    { title: "Nome", dataIndex: "titulo", key: "titulo" },
+    {
+      title: "Nome",
+      dataIndex: "titulo",
+      key: "titulo",
+      render: (text, item) => renderCampeonato(text, item),
+    },
     { title: "Rodada", dataIndex: "rodada", key: "rodada" },
   ];
 

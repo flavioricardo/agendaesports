@@ -28,4 +28,9 @@ const Container = styled.div`
   }
 `;
 
-export { Container };
+const Logo = styled.img`
+  max-height: 42px;
+  width: auto;
+`;
+
+export { Container, Logo };

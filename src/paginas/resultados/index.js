@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import resultadosServico from "../../servicos/resultadosServico";
 
-import { Container, Cell, Vazio } from "./style";
+import { Container, Cell, Vazio, Logo } from "./style";
 
 import { Layout, Table } from "antd";
 
@@ -35,6 +35,14 @@ const renderPosicao = (text, item) => {
   );
 };
 
+const renderTime = (text, item) => {
+  return (
+    <>
+      <Logo src={item.imagem} /> {text}
+    </>
+  );
+};
+
 const Resultados = () => {
   const colunas = [
     {
@@ -47,6 +55,7 @@ const Resultados = () => {
       title: "Time",
       dataIndex: "time",
       key: "time",
+      render: (text, item) => renderTime(text, item),
     },
     {
       title: "Pontuação",

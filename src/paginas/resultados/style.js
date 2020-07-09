@@ -36,4 +36,6 @@ const Cell = styled.span`
 
 const Vazio = styled.span``;
 
-export { Container, Cell, Vazio };
+const Logo = styled.img``;
+
+export { Container, Cell, Vazio, Logo };
